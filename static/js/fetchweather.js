@@ -9,7 +9,7 @@ export async function fetchWeather(latitude, longitude) {
     location[1].textContent = longitude + '°';
 
 
-    let url = `https://weatherappbackend-l3kh.onrender.com/${latitude}/${longitude}`;
+    let url = `https://weatherappback-pga4.onrender.com/${latitude}/${longitude}`;
 
 
     const response = await fetch(url);
