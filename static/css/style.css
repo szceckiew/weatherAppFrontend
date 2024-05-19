@@ -1,0 +1,164 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+}
+
+
+/*colors*/
+
+.weather_column, .weather_today {
+    background: linear-gradient(135deg, #00d4f0, #4e3dbd);
+    color: whitesmoke;
+}
+
+.weather_params{
+    background: linear-gradient(135deg, #00d4f0, #4e3dbd);
+}
+
+.weather_params_input button{
+    background: #00e0fe;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.weather_params_input button:hover{
+    background: #4434af;
+    color: whitesmoke;
+}
+
+.weather_params_input button:active{
+    background: #2b18a8;
+    color: whitesmoke;
+}
+
+/*end colors*/
+
+
+.weather_column{
+    margin: 10px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+
+}
+
+.weather_today{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    padding: 5px 35px;
+    text-align: center;
+}
+
+.weather_today_text{
+    color: rgb(80, 80, 80);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    padding: 5px 35px;
+    text-align: center;
+}
+
+.weather_params{
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.table_container{
+    margin: 40px;
+}
+
+.weather_params_input{
+    align-items: center;
+    
+}
+
+
+
+.weather_params_input button{
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+
+}
+
+
+
+
+.weather_params_input input{
+    border: 2px solid #f0f0f0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    width: 220px;
+    border-radius: 10px;
+    flex: 1;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.weather_params_input .validation_success input{
+    border-color: #09c372;
+}
+
+.weather_params_input .validation_error input{
+    border-color: #c92142;
+}
+
+.weather_params_input .validation_error{
+    color: #c92142;
+    font-size: 12px;
+    
+}
+
+
+.temps{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.location{
+    margin: 0px 15px 0px;
+    color: whitesmoke;
+}
+
+
+
+.sitename{
+    margin: 20px 25px 10px;
+    color: whitesmoke;
+}
+
+.lat_long{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    gap: 3px;
+}
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script type="module" src="{% static 'js/main.js' %}" defer></script>
+    
+</head>
+<body>
+    
+    <div class="sitename">
+        <h2>SUNCAST</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="location row justify-content-center">
+            <div class="lat_long">
+                <h4 class="editable"></h4>
+                <h4>| </h4>
+                <h4 class="editable"></h4>
+            </div>
+            
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="weather_today my-1 col-12 col-sm-12 col-md-5 order-last order-sm-2 order-md-1 p-3 bg-light">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="weather_today_text">Weather Today</h4>
+
+                            <h4 class="editable"></h4>
+                            <h5 class="editable"></h5>
+                            <div class="temps">
+                                <h5 class="editable"></h5>
+                                <h5>|</h5>
+                                <h5 class="editable"></h5>
+                            </div>
+                            <h6 class="editable"></h6>
+                        </div>
+                        <div class="col">
+                            <img class="editable">
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="weather_params my-1 col-12 col-sm-12 col-md-5 order-first order-sm-1 order-md-2 p-3 bg-light">
+
+                <div class="container">
+                    <div class="row align-items-center weather_params_input">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-7">
+                            <div class="input_class">
+                                <input class="latitude" type="number" placeholder="Enter Latitude">
+                                <div class="params_error"></div>
+                            </div>
+                            <div class="input_class">
+                                <input class="longitude" type="number" placeholder="Enter Longitude">
+                                <div class="params_error"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-4 col-xl-2">
+                            <button type="submit" id="fetch_button">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            
+            <div class="weather_column p-3 col-sm-4 col-md-4 col-lg-2">
+                <h4 class="editable"></h4>
+                <div class="editable"></div>
+                <img class="editable">
+                <div class="temps">
+                    <div class="editable"></div>
+                    <div>|</div>
+                    <div class="editable"></div>
+                </div>
+                <div class="editable"></div>
+            </div>
+
+            <div class="weather_column p-3 col-sm-4 col-md-4 col-lg-2">
+                <h4 class="editable"></h4>
+                <div class="editable"></div>
+                <img class="editable">
+                <div class="temps">
+                    <div class="editable"></div>
+                    <div>|</div>
+                    <div class="editable"></div>
+                </div>
+                <div class="editable"></div>
+            </div>
+
+            <div class="weather_column p-3 col-sm-4 col-md-4 col-lg-2">
+                <h4 class="editable"></h4>
+                <div class="editable"></div>
+                <img class="editable">
+                <div class="temps">
+                    <div class="editable"></div>
+                    <div>|</div>
+                    <div class="editable"></div>
+                </div>
+                <div class="editable"></div>
+            </div>
+
+            <div class="weather_column p-3 col-sm-4 col-md-4 col-lg-2">
+                <h4 class="editable"></h4>
+                <div class="editable"></div>
+                <img class="editable">
+                <div class="temps">
+                    <div class="editable"></div>
+                    <div>|</div>
+                    <div class="editable"></div>
+                </div>
+                <div class="editable"></div>
+            </div>
+
+            <div class="weather_column p-3 col-sm-4 col-md-4 col-lg-2">
+                <h4 class="editable"></h4>
+                <div class="editable"></div>
+                <img class="editable" >
+                <div class="temps">
+                    <div class="editable"></div>
+                    <div>|</div>
+                    <div class="editable"></div>
+                </div>
+                <div class="editable"></div>
+            </div>
+
+            <div class="weather_column p-3 col-sm-4 col-md-4 col-lg-2">
+                <h4 class="editable"></h4>
+                <div class="editable"></div>
+                <img class="editable">
+                <div class="temps">
+                    <div class="editable"></div>
+                    <div>|</div>
+                    <div class="editable"></div>
+                </div>
+                <div class="editable"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
